@@ -1,0 +1,565 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../images/chalkBig.jpg);
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ccc; }
+
+h1, h2, h3, h4 {
+  font-weight: 400; }
+
+p {
+  font-weight: 100;
+  font-size: 1em; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a {
+  text-decoration: none;
+  color: #ccc; }
+
+.pageWrap {
+  margin: 0 auto;
+  padding: .5em 5%; }
+  @media (min-width: 1000px) {
+    .pageWrap {
+      max-width: 1000px; } }
+
+.pageWrap p {
+  line-height: 1.2;
+  margin: .75em 0; }
+
+.logo {
+  text-align: center; }
+  .logo a {
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px;
+<<<<<<< HEAD
+    width: 208px;
+    height: 168px;
+    background-size: 208px 168px;
+=======
+    background-size: 208px 168px;
+    width: 208px;
+    height: 168px;
+>>>>>>> add final
+    text-align: center;
+    display: inline-block; }
+    @media (min-width: 600px) {
+      .logo a {
+        margin-top: -.7em; } }
+
+.headerContact {
+  font-size: .75em;
+  text-align: center;
+  letter-spacing: 2px;
+  display: block;
+  vertical-align: bottom; }
+
+@media (min-width: 475px) {
+  .headerBorder {
+    border: none;
+    position: relative; } }
+
+@media (min-width: 475px) {
+  .info {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: -27px; } }
+@media (min-width: 900px) {
+  .info {
+    bottom: -43px; } }
+
+@media (min-width: 475px) {
+  .address {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: -27px; } }
+@media (min-width: 900px) {
+  .address {
+    bottom: -43px; } }
+
+@media (min-width: 600px) {
+  .headerContact {
+    width: 32%; } }
+
+.nav {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em; }
+  @media (min-width: 600px) {
+    .nav {
+      border-bottom: 1px solid #d0971d;
+      border-top: 1px solid #d0971d;
+      margin-top: -3.25em;
+      margin-bottom: 3em; } }
+  @media (min-width: 900px) {
+    .nav {
+      margin-bottom: 8em;
+      border-bottom: none;
+      border-top: none;
+      border-left: 1px solid #d0971d;
+      border-right: 1px solid #d0971d; } }
+
+.nav a {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  text-align: left;
+  padding: .75em;
+  border-left: 1px solid #d0971d;
+  margin-bottom: 1em;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 600px) {
+    .nav a {
+      border: none;
+      display: inline-block;
+      width: 40%;
+      text-align: center;
+      margin-bottom: 0; } }
+  .nav a:before {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease; }
+  @media (min-width: 900px) {
+    .nav a {
+      width: 40%;
+      float: left;
+      padding-top: .5em; }
+      .nav a:before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #d0971d;
+        transform: scaleX(0); }
+      .nav a:hover:before {
+        transform: scaleX(0.2); } }
+
+@media (min-width: 600px) {
+  .navRight {
+    width: 42%;
+    float: right; } }
+
+@media (min-width: 600px) {
+  .navLeft {
+    width: 42%;
+    float: left; } }
+@media (min-width: 900px) {
+  .navLeft {
+    float: left; } }
+
+.navArrow {
+  font-size: 1.65em;
+  font-family: "Roboto", sans-serif;
+  color: #d0971d;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  top: 2px; }
+  @media (min-width: 600px) {
+    .navArrow {
+      display: none; } }
+
+.footerChalk {
+  padding: 2em 3%;
+  clear: both; }
+
+.footerChalk p {
+  font-size: .6em;
+  text-align: center;
+  line-height: 1.2;
+  margin: .75em 0;
+  letter-spacing: 1; }
+
+.footerH3 {
+  font-size: .85em;
+  text-align: center;
+  font-weight: 300; }
+
+.homepage .nav {
+  margin-bottom: 2em; }
+
+.bigBGpic {
+  text-align: center; }
+  @media (min-width: 900px) {
+    .bigBGpic {
+      overflow: hidden; } }
+
+.homeButton {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8em;
+  border: 1px solid #ccc;
+  padding: .75em 3.5em; }
+  @media (min-width: 750px) {
+    .homeButton {
+      border: 0 solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.5);
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all .7s; }
+      .homeButton:hover {
+        box-shadow: inset 0 0 0px rgba(255, 255, 255, 0.5), 0 0 0px rgba(255, 255, 255, 0.5);
+        outline-color: #d0971d;
+        outline-offset: 3px;
+        color: #ccc;
+        letter-spacing: 1px; } }
+
+.tap {
+  background: url(../images/tap.jpg) no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 3em; }
+  @media (min-width: 475px) {
+    .tap {
+      padding-bottom: 4em; } }
+  @media (min-width: 600px) {
+    .tap {
+      padding-bottom: 5em; } }
+  .tap h2 {
+    background: url(../images/webelieve.png) no-repeat center;
+    text-indent: -9999px;
+    margin: 0 auto;
+    width: 260px;
+    height: 270px;
+    background-size: 260px 270px; }
+    @media (min-width: 600px) {
+      .tap h2 {
+        width: 360px;
+        height: 370px;
+        background-size: 360px 370px; } }
+    @media (min-width: 900px) {
+      .tap h2 {
+        width: 415px;
+        height: 426px;
+        background-size: 415px 426px; } }
+
+.hops {
+  background: url(../images/hops.jpg) no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 3em;
+  background-attachment: fixed; }
+  @media (min-width: 475px) {
+    .hops {
+      padding: 4em; } }
+  @media (min-width: 600px) {
+    .hops {
+      padding: 5.75em; } }
+  @media (min-width: 900px) {
+    .hops {
+      padding: 6.5em; } }
+  .hops h2 {
+    background: url(../images/honor.png) no-repeat center;
+    text-indent: -9999px;
+    margin: 0 auto;
+    width: 230px;
+    height: 240px;
+    background-size: 230px 240px; }
+    @media (min-width: 600px) {
+      .hops h2 {
+        width: 360px;
+        height: 370px;
+        background-size: 360px 370px; } }
+    @media (min-width: 900px) {
+      .hops h2 {
+        width: 415px;
+        height: 426px;
+        background-size: 415px 426px; } }
+
+.keg {
+  background: url(../images/keg.jpg) no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 3em; }
+  @media (min-width: 475px) {
+    .keg {
+      padding: 4em; } }
+  @media (min-width: 600px) {
+    .keg {
+      padding: 5.75em; } }
+  @media (min-width: 900px) {
+    .keg {
+      padding: 6.5em; } }
+  .keg h2 {
+    background: url(../images/first.png) no-repeat center;
+    text-indent: -9999px;
+    margin: 0 auto;
+    width: 230px;
+    height: 220px;
+    background-size: 230px 220px; }
+    @media (min-width: 600px) {
+      .keg h2 {
+        width: 360px;
+        height: 350px;
+        background-size: 360px 350px; } }
+    @media (min-width: 900px) {
+      .keg h2 {
+        width: 415px;
+        height: 396px;
+        background-size: 415px 396px; } }
+
+.shield {
+  background: url(../images/shield.jpg) no-repeat;
+  background-position: left;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 3em;
+  background-attachment: fixed; }
+  @media (min-width: 475px) {
+    .shield {
+      padding: 4em; } }
+  @media (min-width: 600px) {
+    .shield {
+      padding: 5.75em; } }
+  @media (min-width: 900px) {
+    .shield {
+      padding: 6.5em; } }
+  .shield h2 {
+    background: url(../images/history.png) no-repeat;
+    text-indent: -9999px;
+    margin: 0 auto;
+    width: 230px;
+    height: 240px;
+    background-size: 230px 240px; }
+    @media (min-width: 600px) {
+      .shield h2 {
+        width: 360px;
+        height: 370px;
+        background-size: 360px 370px; } }
+    @media (min-width: 900px) {
+      .shield h2 {
+        width: 415px;
+        height: 426px;
+        background-size: 415px 426px; } }
+
+.pageTitle {
+  font-family: "Playfair Display", serif;
+  color: #d0971d;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 1px; }
+
+.internalHeaderImg {
+  background: url(../images/hopsGrad.jpg) no-repeat;
+  background-position: right;
+  background-size: cover;
+  text-align: center;
+  padding-top: 1em; }
+
+@media (min-width: 600px) {
+  .beerList {
+    display: inline-block;
+    width: 47%;
+    float: left; } }
+
+@media (min-width: 600px) {
+  .seasonal, .limited {
+    margin-left: 5%; } }
+
+.beerList h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #d0971d;
+  font-style: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1em 0 .75em; }
+.beerList ul {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+  height: 12em;
+  padding: 1em; }
+.beerList li {
+  line-height: 2.5;
+  text-align: left;
+  position: relative; }
+.beerList a {
+  text-transform: uppercase;
+  font-size: .9em;
+  display: block;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: letter-spacing 0.5s ease;
+  -moz-transition: letter-spacing 0.5s ease;
+  -ms-transition: letter-spacing 0.5s ease;
+  -o-transition: letter-spacing 0.5s ease;
+  transition: letter-spacing 0.5s ease; }
+  .beerList a .arrow {
+    font-family: "Roboto", sans-serif;
+    color: #ccc;
+    font-size: 1.8em;
+    position: absolute;
+    top: -17px;
+    right: 0;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  @media (min-width: 750px) {
+    .beerList a:hover {
+      color: #d0971d;
+      letter-spacing: 1px; }
+      .beerList a:hover .arrow {
+        color: #d0971d; } }
+
+.beerBottle {
+  width: 20%;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em; }
+  @media (min-width: 600px) {
+    .beerBottle {
+      width: 18%;
+      margin-right: 4%;
+      margin-top: -3em; } }
+  @media (min-width: 750px) {
+    .beerBottle {
+      width: 20%;
+      margin-bottom: 5em; } }
+  @media (min-width: 900px) {
+    .beerBottle {
+      width: 18%;
+      margin-right: 3%;
+      margin-top: -6em; } }
+  @media (min-width: 1000px) {
+    .beerBottle {
+      margin-right: 4%; } }
+
+.beerName {
+  font-family: "Playfair Display", serif;
+  color: #d0971d;
+  font-size: 2.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.beerDescr p {
+  line-height: 1.6;
+  margin-bottom: 1.2em; }
+@media (min-width: 1000px) {
+  .beerDescr {
+    width: 60%;
+    float: left; } }
+
+.vitals h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 3em 0 1.5em; }
+.vitals p {
+  overflow: hidden; }
+.vitals .vitalTitle {
+  color: #d0971d;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  display: block;
+  width: 70px;
+  float: left;
+  margin-right: .75em;
+  position: relative; }
+.vitals .colon {
+  position: absolute;
+  right: 0; }
+.vitals .vitalDescr {
+  text-align: left;
+  display: block;
+  float: left;
+  width: 65%; }
+@media (min-width: 1000px) {
+  .vitals {
+    width: 34%;
+    float: left;
+    margin-left: 6%; } }
+
+.columnRight {
+  margin-bottom: 4em; }
+  @media (min-width: 600px) {
+    .columnRight {
+      float: right;
+      width: 75%; } }
+  @media (min-width: 750px) {
+    .columnRight {
+      width: 73%; } }
+  @media (min-width: 900px) {
+    .columnRight {
+      width: 77%; } }
+  @media (min-width: 1000px) {
+    .columnRight {
+      width: 78%; } }
+
+.backToBeers {
+  font-family: "Playfair Display", serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 1px solid #d0971d;
+  display: block;
+  padding: 1em;
+  margin: 0 0 2em;
+  clear: both; }
+  @media (min-width: 600px) {
+    .backToBeers {
+      display: inline-block; } }
+  @media (min-width: 750px) {
+    .backToBeers {
+      border: 0 solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.5);
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all .7s; }
+      .backToBeers:hover {
+        box-shadow: inset 0 0 0px rgba(255, 255, 255, 0.5), 0 0 0px rgba(255, 255, 255, 0.5);
+        outline-color: #d0971d;
+        outline-offset: 3px;
+        color: #ccc; } }
+
+/*# sourceMappingURL=styles.css.map */

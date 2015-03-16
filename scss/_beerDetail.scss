@@ -1,0 +1,159 @@
+.beerBottle {
+	width: 20%;
+	float: left; 
+	margin-right: 2em;
+	margin-bottom: 1em;
+
+
+	@include breakpoint($small){
+		width:18%;
+		margin-right: 4%;
+		margin-top: -3em;
+	}
+	@include breakpoint($smedium){
+		width: 20%;
+		margin-bottom: 5em;
+	}
+	@include breakpoint($medium){
+		width:18%;
+		margin-right: 3%;
+		margin-top: -6em;
+	}
+
+	@include breakpoint($large){
+		margin-right: 4%;
+	}
+
+	
+}
+
+.beerName {
+	font-family: $font1;
+	color: $yellow;
+	font-size: 2.7em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+
+.beerDescr {
+	p {
+		line-height: 1.6;
+		margin-bottom: 1.2em;
+	}
+
+
+	@include breakpoint($large){
+		width: 60%;
+		float: left;
+	}
+}
+
+
+.vitals {
+
+
+	h3 {
+		font-family: $font1;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 3em 0 1.5em;
+	}
+	p {
+		overflow:hidden;
+	}
+	.vitalTitle {
+		color: $yellow;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-align:left;
+		display: block;
+		width: 70px;
+		float:left;
+		margin-right: .75em;
+		position: relative;
+
+	}
+
+	.colon {
+		position: absolute;
+		right: 0;
+
+	}
+
+	.vitalDescr {
+		text-align: left;
+		display: block;
+		float:left;
+		width: 65%;
+	}
+
+	@include breakpoint($large){
+		width: 34%;
+		float: left;
+		margin-left: 6%;
+	}
+}
+
+.columnRight {
+
+	margin-bottom: 4em;
+
+	@include breakpoint($small){
+		float: right;
+		width: 75%;	
+	}
+
+	@include breakpoint($smedium){
+		width: 73%;
+	}
+
+	@include breakpoint($medium){
+		width: 77%;
+	}
+	
+	@include breakpoint($large){
+		width: 78%;
+
+	}
+
+}
+
+
+
+.backToBeers {
+	font-family: $font1;
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-left: 1px solid $yellow;
+	display: block;
+	padding: 1em;
+	margin: 0 0 2em;
+	clear: both;
+	
+	@include breakpoint($small){
+		display: inline-block;
+	}
+	@include breakpoint($smedium){
+		
+		border: 0 solid;
+		box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+		outline: 1px solid;
+		outline-color: rgba(255, 255, 255, .5);
+		outline-offset: 0px;
+		text-shadow: none;
+		transition: all .7s;
+	
+
+		&:hover {
+			box-shadow: inset 0 0 0px rgba(255, 255, 255, .5), 0 0 0px rgba(255, 255, 255, .5);
+			outline-color: $yellow;
+			outline-offset: 3px;
+			color: $white;
+			
+		}
+	}
+}

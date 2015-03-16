@@ -1,0 +1,94 @@
+.pageTitle {
+	font-family: $font1;
+	color: $yellow;
+	text-transform: uppercase;
+	font-size:2.5em;
+	letter-spacing: 1px;
+}
+
+.internalHeaderImg {
+	background: url(../images/hopsGrad.jpg) no-repeat;
+	background-position: right;
+	background-size: cover;
+	text-align: center;
+	padding-top: 1em;
+
+}
+
+.beerList {
+	@include breakpoint($small){
+		display: inline-block;
+		width: 47%;
+		float: left;
+
+	}
+}
+
+.seasonal,.limited {
+	@include breakpoint($small){
+		margin-left: 5%;
+	}
+}
+
+.beerList{ 
+
+	h2 {
+		text-align: center;
+		text-transform:uppercase;
+		letter-spacing: 1px;
+		border: 1px solid $yellow;
+		font-style: $font1;
+		font-weight: 300;
+		font-size: 1.2em;
+		margin: 0;
+		padding: 1em 0 .75em;
+	}
+	
+	ul {
+		border-right: 1px solid $white;
+		border-left: 1px solid $white;
+		border-bottom: 1px solid $white;
+		margin-top: 0;
+		height: 12em;
+		padding: 1em;
+
+	}
+
+	li {
+		line-height: 2.5;
+		text-align: left;
+		position: relative;
+	}
+
+	a {
+
+		text-transform: uppercase;
+		font-size: .9em;
+		display: block;
+
+		@include transition (color, .3s, ease);
+		@include transition (letter-spacing, .5s, ease);
+		.arrow {
+			font-family: $font2;
+			color: $white;
+			font-size: 1.8em;
+			position: absolute;
+			top: -17px;
+			right: 0;
+
+			@include transition (color, .3s, ease);
+
+		}
+
+		&:hover{		
+			@include breakpoint($smedium) {
+				color: $yellow;
+				letter-spacing: 1px;
+
+				.arrow {
+					color: $yellow;
+				} // --------- end arrow
+			} // --------- end bk pt
+		} // --------- end hover
+	} // --------- end a
+} // --------- end beerlist
